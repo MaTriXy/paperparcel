@@ -6,7 +6,7 @@ PaperParcel is an annotation processor that automatically generates the `CREATOR
 
 For more information please see [the website](http://grandstaish.github.io/paperparcel/).
 
-[See this blog entry](http://blog.bradcampbell.nz/a-comparison-of-parcelable-boilerplate-libraries/) for a comparison with alternative solutions. 
+**Note:** JetBrains have released Parcelize as an "experimental" feature of Kotlin. As of Kotlin `1.1.60` I personally have found it stable enough to use in production. If you don't require some of the more advanced features of PaperParcel (e.g. type adapters), I recommend looking into Parcelize _before_ this library. 
 
 ## Download
 
@@ -20,9 +20,6 @@ dependencies {
 ```
 
 **Kotlin:**
-
-PaperParcel requires `kotlin 1.0.5` (or greater) and the `'kotlin-kapt'` Gradle plugin. Please note that the `'kotlin-kapt'` Gradle plugin is still experimental and may have issues.
-
 ```groovy
 apply plugin: 'kotlin-kapt'
 
