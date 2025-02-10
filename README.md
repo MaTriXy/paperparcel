@@ -1,3 +1,7 @@
+# This project is deprecated
+ 
+It will still be maintained, but no new features will be added. Please use [Parcelize](https://kotlinlang.org/docs/tutorials/android-plugin.html#parcelable-implementations-generator), as it is the official way of generating `Parcelable` implementations on Android. 
+
 # PaperParcel
 
 [![Build Status](https://travis-ci.org/grandstaish/paperparcel.svg?branch=master)](https://travis-ci.org/grandstaish/paperparcel)
@@ -6,16 +10,14 @@ PaperParcel is an annotation processor that automatically generates the `CREATOR
 
 For more information please see [the website](http://grandstaish.github.io/paperparcel/).
 
-**Note:** JetBrains have released Parcelize as an "experimental" feature of Kotlin. As of Kotlin `1.1.60` I personally have found it stable enough to use in production. If you don't require some of the more advanced features of PaperParcel (e.g. type adapters), I recommend looking into Parcelize _before_ this library. 
-
 ## Download
 
 **Java:**
 
 ```groovy
 dependencies {
-  compile 'nz.bradcampbell:paperparcel:2.0.4'
-  annotationProcessor 'nz.bradcampbell:paperparcel-compiler:2.0.4'
+  compile 'nz.bradcampbell:paperparcel:2.0.8'
+  annotationProcessor 'nz.bradcampbell:paperparcel-compiler:2.0.8'
 }
 ```
 
@@ -24,9 +26,9 @@ dependencies {
 apply plugin: 'kotlin-kapt'
 
 dependencies {
-  compile 'nz.bradcampbell:paperparcel:2.0.4'
-  compile 'nz.bradcampbell:paperparcel-kotlin:2.0.4' // Optional
-  kapt 'nz.bradcampbell:paperparcel-compiler:2.0.4'
+  compile 'nz.bradcampbell:paperparcel:2.0.8'
+  compile 'nz.bradcampbell:paperparcel-kotlin:2.0.8' // Optional
+  kapt 'nz.bradcampbell:paperparcel-compiler:2.0.8'
 }
 ```
 
